@@ -3,7 +3,6 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For You</title>
 </head>
 <body style="font-family:Arial, sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;margin:0;text-align:center;padding:20px;">
 <div style="font-size:20px;max-width:600px;line-height:1.5;">
