@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Bot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Homepage -->
+    <div id="homepage" class="scene active">
+        <div class="pixel-background">
+            <div class="kingdom-layer"></div>
+            <div class="lantern"></div>
+            <div class="lantern"></div>
+            <div class="lantern"></div>
+            <div class="lantern"></div>
+            <div class="fog-layer"></div>
+            <div class="cloud-layer"></div>
+            <div class="stars-container"></div>
+        </div>
+
+        <div class="home-content">
+            <h1 class="title pixel-glow">PERSONALITY BOT</h1>
+            <button id="appraisalBtn" class="pixel-button">
+                [ APPRAISAL ]
+            </button>
+        </div>
+    </div>
+
+    <!-- Appraisal Realm -->
+    <div id="appraisalRealm" class="scene">
+        <div class="pixel-realm-background">
+            <div class="kingdom-layer"></div>
+            <div class="lantern"></div>
+            <div class="lantern"></div>
+            <div class="lantern"></div>
+            <div class="lantern"></div>
+            <div class="fog-layer"></div>
+            <div class="cloud-layer"></div>
+            <div class="fast-clouds-container"></div>
+        </div>
+
+        <div class="realm-content">
+            <!-- Character Silhouette -->
+            <div class="pixel-character">
+                <!-- Simple pixel character -->
+                <div class="pixel-char-body"></div>
+            </div>
+
+            <!-- Main Panel -->
+            <div class="pixel-dialogue-box">
+                <!-- Intro Text Animation Container -->
+                <div id="introContainer" class="dialogue-text">
+                    <div id="dialogueText"></div>
+                    <div id="continuePrompt" class="hidden">▶ CONTINUE</div>
+                </div>
+
+                <!-- Input Form Container (hidden until intro finishes) -->
+                <div id="formContainer" class="pixel-menu hidden">
+                    <div class="menu-title">ENTER YOUR DETAILS</div>
+                    <div class="form-group">
+                        <label>NAME:</label>
+                        <input type="text" id="nameInput" class="pixel-input" placeholder="TYPE HERE">
+                    </div>
+                    <div class="form-group">
+                        <label>BIRTHDATE:</label>
+                        <input type="date" id="birthdateInput" class="pixel-input">
+                    </div>
+                    <button id="enterBtn" class="pixel-button-small">ENTER</button>
+                </div>
+
+                <!-- Results Container (hidden until form submitted) -->
+                <div id="resultsContainer" class="pixel-log hidden">
+                    <div class="log-title">APPRAISAL RESULTS</div>
+                    <div id="resultsLog" class="log-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio elements for sound effects -->
+    <audio id="whooshSound" preload="auto">
+        <source src="https://assets.mixkit.co/active_storage/sfx/2015/2015-preview.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="pageFlipSound" preload="auto">
+        <source src="https://assets.mixkit.co/active_storage/sfx/2860/2860-preview.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="chimeSound" preload="auto">
+        <source src="https://assets.mixkit.co/active_storage/sfx/2871/2871-preview.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
